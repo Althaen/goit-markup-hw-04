@@ -25,7 +25,7 @@ img {
   padding: 0 15px;
 }
 header {
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   margin: 0 auto;
 }
 .header {
@@ -47,6 +47,8 @@ header {
 .button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 body {
   font-family: "Roboto", "Helvetica Neue", "Verdana", "Tahoma", sans-serif;
@@ -85,8 +87,6 @@ nav a {
 }
 header {
   line-height: 1.14;
-
-  /*height: 80px;*/
   border-bottom: 1px solid #ececec;
 }
 nav {
@@ -99,8 +99,6 @@ header ul {
 }
 .contacts {
   margin-left: auto;
-
-  /*margin-right: 215px;*/
 }
 .contacts a {
   color: var(--secondary-color);
@@ -177,7 +175,7 @@ header ul li + li {
 }
 .features p {
   color: var(--secondary-color);
-
+  line-height: 1.71;
   margin-top: 10px;
 }
 .features li {
@@ -205,7 +203,7 @@ header ul li + li {
 }
 .team {
   background-color: var(--button-color);
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   margin: 0 auto;
 }
 .team ul {
@@ -257,14 +255,15 @@ header ul li + li {
   background-color: var(--accent-color);
   color: #ffffff;
 }
-.partners-list {
-  justify-content: space-between;
+.partners-list li + li {
+  margin-left: 30px;
 }
 .partner {
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-links-color);
   border-radius: 4px;
+  color: var(--social-links-color);
 }
 .partner a {
   width: 100%;
@@ -285,7 +284,7 @@ footer {
   background-color: var(--bg-secondary);
   padding-bottom: 60px;
   padding-top: 60px;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   margin: 0 auto;
 }
 footer .logo {
@@ -369,15 +368,9 @@ address ul li:nth-child(2) {
   line-height: 1.62;
   border: none;
   border-radius: 4px;
-  overflow: hidden;
 }
 .filters li + li {
   margin-left: 8px;
-}
-.filters li:focus,
-.filters li:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects {
   display: flex;
